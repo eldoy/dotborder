@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>DotBorder JS</title>
+  <style>
+    body {
+      background-color: steelblue;
+    }
+
+    .button {
+      border-radius: 50%;
+      display: inline-block;
+      position: relative;
+      background-color: #fff;
+      text-align: center;
+    }
+
+    .button span {
+      position: relative;
+      top: 160px;
+      font-size: 1.8rem;
+    }
+
+    .dot {
+      position: absolute;
+      border-radius: 50%;
+      background-color: black;
+    }
+
+  </style>
+</head>
+<body>
+  <div class="button">
+    <span>I want to<br>know more</span>
+  </div>
+  <script src="./dotborder.js"></script>
+  <script>
+    // See dotborder.js for more options
+    dotborder({
+      rate: 6,
+      offset: -20,
+      dotSize: 8,
+      buttonSize: 400
+    })
+  </script>
+</body>
+</html>
